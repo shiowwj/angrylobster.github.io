@@ -1,17 +1,27 @@
-.navbar{
+.navbar-dark{
     background-color:black !important;
     padding: 0 100px 0 100px;
-}
-.navbar-brand{
-    height: 92px;
-    display:flex;
-    align-items:center;
-    font-family: 'Fjalla One', sans-serif; 
-    font-size: 24px;
+    transition: 1.5s;
 }
 
-.navbar-brand img{
+.navbar-light{
+    /* background-color:transparent !important; */
+    padding: 0 100px 0 100px;
+    transition: 1.5s;
+}
+
+.logo{
     height: 62px;
+    width: 262.8px;
+    background-size:cover;
+    background-image: url('images/img-logo.svg');
+}
+
+.logo-transition{
+    height: 62px;
+    width: 262.8px;
+    background-size:cover;
+    background-image: url('images/img-logoblack.svg');
 }
 
 .navbar-collapse{
@@ -24,8 +34,12 @@
     padding: 0 20px 0 20px !important;
 }
 
+.nav-link-transition{
+    color: black !important;
+}
+
 .jumbotron{
-    height: 602px;
+    height: 702px;
     display:flex;
     align-items:center;
     color:white;
@@ -54,7 +68,7 @@
     margin: 0 auto;
     margin-top: 50px;
     font-size: 14px;
-    font-family: 'Open Sans', 14px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     padding: 20px 34px 20px 34px;
     background-color: transparent;
@@ -67,7 +81,7 @@
     border:2px solid #F75334;
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5, h6{
     font-family: 'Fjalla One', sans-serif; 
     margin: 0;
     padding: 0;
@@ -112,11 +126,28 @@ h1{
 
 .para{
     margin: 0 auto;
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
+.screenshot{
+    height: 400px;
+    object-fit: cover;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
 h5{
     font-size: 32px;
     color: #F75334;
+
+}
+
+h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #F75334;
+    font-weight: 700;
+}
+
+.row{
+    margin-bottom: 50px;
 }
