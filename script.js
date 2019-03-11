@@ -1,6 +1,6 @@
 window.onload = () =>{
     window.addEventListener('scroll', ()=>{
-        if (window.scrollY > 250){
+        if (window.scrollY > 530){
             if (document.querySelector('.navbar-dark')){
                 let darkNavBar = document.querySelector('.navbar-dark');
                 darkNavBar.classList.add('navbar-light');
