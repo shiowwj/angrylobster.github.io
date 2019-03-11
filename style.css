@@ -245,4 +245,31 @@ MEDIA QUERIES
     .skill-logo img {
         width: 40%;
     }
-}​
+}
+
+
+@media (max-width: 540px){
+    .logo, .logo-transition{
+        display: none;
+    }
+    .navbar-toggler{
+        margin: 0 auto;
+    }
+    .nav-link{
+        text-align:center;
+    }
+    .jumbotron{
+        background-position: 60% 50%;
+    }
+
+}
+
+@media (max-width: 375px){
+    h1{
+        font-size: 30px;
+    }
+    p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
