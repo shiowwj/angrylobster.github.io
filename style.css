@@ -27,7 +27,7 @@ h1 {
 h5 {
     font-size: 32px;
     color: #F75334;
-
+    margin-bottom: 15px;
 }
 
 h6 {
@@ -48,11 +48,6 @@ button{
 
 html{
     scroll-behavior: smooth;
-}
-
-img{
-    width: 100%;
-    height: 100%;
 }
 
 p {
@@ -103,6 +98,11 @@ BOOTSTRAP CSS
     transition: 1.5s;
 }
 
+.skill-logos{
+    width: 60%;
+    margin-bottom: 20%;
+}
+
 /* ==========================================================
 
 CUSTOM CLASSES
@@ -119,20 +119,26 @@ CUSTOM CLASSES
     flex-flow: row wrap;
 }
 
+.icon{
+    width: 80%;
+}
+
 .logo {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0px;
     height: 62px;
     width: 262.8px;
-    background-size: cover;
-    background-image: url('images/logo-ms-white.svg');
+    content: url('images/logo-ms-white.svg');
+    /* background-size: cover;
+    background-image: url('images/logo-ms-white.svg'); */
 }
 
 .logo-transition {
     margin: 10px 0 10px 0;
     height: 62px;
     width: 262.8px;
-    background-size: cover;
-    background-image: url('images/logo-ms-black.svg');
+    content: url('images/logo-ms-black.svg');
+    /* background-size: cover;
+    background-image: url('images/logo-ms-black.svg'); */
 }
 
 .nav-link-transition {
@@ -232,28 +238,13 @@ MEDIA QUERIES
 
 ========================================================== */
 
-@media screen and (max-width:575px) {
-    .skill-logo img{
-        width: 55%;
-    }
-}
-
-@media (min-width:991px) {
-    .col-lg-3 {
-        padding: 0 3% 1% 3% !important;
-    }
-    .skill-logo img {
-        width: 40%;
-    }
-}
-
-
 @media (max-width: 540px){
-    .logo, .logo-transition{
-        display: none;
+    .navbar{
+        padding: 0 50px 0 50px !important;
     }
-    .navbar-toggler{
-        margin: 0 auto;
+    .logo, .logo-transition{
+        width: 150px;
+        height: 100%;
     }
     .nav-link{
         text-align:center;
@@ -261,12 +252,29 @@ MEDIA QUERIES
     .jumbotron{
         background-position: 60% 50%;
     }
-
+    .skill-logos{
+        width: 80%;
+        margin-bottom: 25%;
+    }
+    .icon{
+        width: 80%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h5{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 375px){
     h1{
         font-size: 30px;
+    }
+    h5{
+        font-size: 25px;
+        margin-bottom: 5px;
     }
     p{
         margin-top: 10px;
