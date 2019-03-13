@@ -73,6 +73,7 @@ BOOTSTRAP CSS
     background-image: url('images/background-jumbotron.jpg');
     background-position: 100% 67%;
     background-size: cover;
+    background-color: rgba(0,0,0,0.3);
     overflow: hidden;
     margin: 0;
 }
@@ -211,6 +212,14 @@ CUSTOM CLASSES
     width: 55%;
     display: inline-block;
     font-style: italic;
+}
+
+.tint{
+    background-color: rgba(0,0,0,0.6);
+    z-index:1;
+    width:100%;
+    height: inherit;
+    position:absolute;
 }
 
 /* ==========================================================
